@@ -1,0 +1,82 @@
+:root {
+  --gold:        #C9A84C;
+  --gold-light:  #E8D5A3;
+  --gold-dark:   #8B6914;
+  --text-muted:  #888888;
+
+  --radius:      12px;
+  --shadow:      0 8px 32px rgba(201, 168, 76, 0.15);
+  --transition:  0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  color: #1A0A2E;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--gold-dark);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.35);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--gold-dark);
+  border: 1.5px solid var(--gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.75rem;
+  border-radius: 50px;
+}
+
+.btn-secondary:hover {
+  background: var(--gold);
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FFFFFF; }
+::-webkit-scrollbar-thumb { background: var(--gold-light); border-radius: 3px; }
